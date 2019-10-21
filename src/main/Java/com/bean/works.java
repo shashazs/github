@@ -1,4 +1,4 @@
-package com.xdkj.bean;
+package com.bean;
 
 /**
  * @author ShangGuan
