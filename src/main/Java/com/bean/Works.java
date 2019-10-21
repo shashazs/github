@@ -6,7 +6,7 @@ package com.bean;
  */
 
 //个人作品
-public class works {
+public class Works {
     private Integer wid;//作品编号
     private String wname;//作品名称
     private String trade;//所属行业
@@ -16,7 +16,7 @@ public class works {
     private String wimage;//作品截图
     private Integer wperson;//所属人
 
-    @java.lang.Override
+    @Override
     public java.lang.String toString() {
         return "works{" +
                 "wid=" + wid +
@@ -94,7 +94,7 @@ public class works {
         this.wperson = wperson;
     }
 
-    public works(Integer wid, String wname, String trade, String keyword, String href, String duty, String wimage, Integer wperson) {
+    public Works(Integer wid, String wname, String trade, String keyword, String href, String duty, String wimage, Integer wperson) {
         this.wid = wid;
         this.wname = wname;
         this.trade = trade;
@@ -105,6 +105,6 @@ public class works {
         this.wperson = wperson;
     }
 
-    public works() {
+    public Works() {
     }
 }

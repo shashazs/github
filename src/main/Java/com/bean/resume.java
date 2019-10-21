@@ -1,34 +1,30 @@
-package com.xdkj.bean;
+package com.bean;/*
+@author hj
+@create 2019-10-21-14:01
+*/
 
-/**
- * @author ShangGuan
- * @create 2019-10-21 10:49
- */
+public class Resume {
+    private Integer rid;
+    private String workStatus;
+    private String workDirection;
+    private String specificWork;
+    private Integer skills;
+    private Integer works;
+    private String rintroduce;
+    private String rPerson;
 
-// 个人履历
-public class resume {
+    public Resume() {
+    }
 
-    private Integer rid;//履历编号
-    private String workstatus;//工作状态
-    private String workdirection;//职业方向
-    private String specificwork;//具体工作
-    private skills skill;//技能
-    private works works;//个人作品
-    private String rintroduce;//个人介绍
-    private Integer rperson;//所属人
-
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "resume{" +
-                "rid=" + rid +
-                ", workstatus='" + workstatus + '\'' +
-                ", workdirection='" + workdirection + '\'' +
-                ", specificwork='" + specificwork + '\'' +
-                ", skill=" + skill +
-                ", works=" + works +
-                ", rintroduce='" + rintroduce + '\'' +
-                ", rperson=" + rperson +
-                '}';
+    public Resume(Integer rid, String workStatus, String workDirection, String specificWork, Integer skills, Integer works, String rintroduce, String rPerson) {
+        this.rid = rid;
+        this.workStatus = workStatus;
+        this.workDirection = workDirection;
+        this.specificWork = specificWork;
+        this.skills = skills;
+        this.works = works;
+        this.rintroduce = rintroduce;
+        this.rPerson = rPerson;
     }
 
     public Integer getRid() {
@@ -39,43 +35,43 @@ public class resume {
         this.rid = rid;
     }
 
-    public String getWorkstatus() {
-        return workstatus;
+    public String getWorkStatus() {
+        return workStatus;
     }
 
-    public void setWorkstatus(String workstatus) {
-        this.workstatus = workstatus;
+    public void setWorkStatus(String workStatus) {
+        this.workStatus = workStatus;
     }
 
-    public String getWorkdirection() {
-        return workdirection;
+    public String getWorkDirection() {
+        return workDirection;
     }
 
-    public void setWorkdirection(String workdirection) {
-        this.workdirection = workdirection;
+    public void setWorkDirection(String workDirection) {
+        this.workDirection = workDirection;
     }
 
-    public String getSpecificwork() {
-        return specificwork;
+    public String getSpecificWork() {
+        return specificWork;
     }
 
-    public void setSpecificwork(String specificwork) {
-        this.specificwork = specificwork;
+    public void setSpecificWork(String specificWork) {
+        this.specificWork = specificWork;
     }
 
-    public skills getSkill() {
-        return skill;
+    public Integer getSkills() {
+        return skills;
     }
 
-    public void setSkill(skills skill) {
-        this.skill = skill;
+    public void setSkills(Integer skills) {
+        this.skills = skills;
     }
 
-    public works getWorks() {
+    public Integer getWorks() {
         return works;
     }
 
-    public void setWorks(works works) {
+    public void setWorks(Integer works) {
         this.works = works;
     }
 
@@ -87,25 +83,25 @@ public class resume {
         this.rintroduce = rintroduce;
     }
 
-    public Integer getRperson() {
-        return rperson;
+    public String getrPerson() {
+        return rPerson;
     }
 
-    public void setRperson(Integer rperson) {
-        this.rperson = rperson;
+    public void setrPerson(String rPerson) {
+        this.rPerson = rPerson;
     }
 
-    public resume(Integer rid, String workstatus, String workdirection, String specificwork, skills skill, works works, String rintroduce, Integer rperson) {
-        this.rid = rid;
-        this.workstatus = workstatus;
-        this.workdirection = workdirection;
-        this.specificwork = specificwork;
-        this.skill = skill;
-        this.works = works;
-        this.rintroduce = rintroduce;
-        this.rperson = rperson;
-    }
-
-    public resume() {
+    @Override
+    public String toString() {
+        return "Resume{" +
+                "rid=" + rid +
+                ", workStatus='" + workStatus + '\'' +
+                ", workDirection='" + workDirection + '\'' +
+                ", specificWork='" + specificWork + '\'' +
+                ", skills=" + skills +
+                ", works=" + works +
+                ", rintroduce='" + rintroduce + '\'' +
+                ", rPerson='" + rPerson + '\'' +
+                '}';
     }
 }

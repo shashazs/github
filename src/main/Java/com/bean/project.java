@@ -1,43 +1,16 @@
-package com.xdkj.bean;
+package com.bean;
 
 /**
- * @author ShangGuan
- * @create 2019-10-21 10:54
+ * @author Devil
+ * @create 2019-10-21-14:53
  */
-
-//项目需求
-public class project {
-
+public class Project {
     private Integer pid;//项目编号
-    private String pname;//名称
-    private double budget;//预算
-    private String pintroduce;//简介
-    private String file;//文档
-    private Integer publisher;//发布者
-
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "project{" +
-                "pid=" + pid +
-                ", pname='" + pname + '\'' +
-                ", budget=" + budget +
-                ", pintroduce='" + pintroduce + '\'' +
-                ", file='" + file + '\'' +
-                ", publisher=" + publisher +
-                '}';
-    }
-
-    public project(Integer pid, String pname, double budget, String pintroduce, String file, Integer publisher) {
-        this.pid = pid;
-        this.pname = pname;
-        this.budget = budget;
-        this.pintroduce = pintroduce;
-        this.file = file;
-        this.publisher = publisher;
-    }
-
-    public project() {
-    }
+    private String pname;//项目名称
+    private Double budget;//项目预算
+    private String pintroduce;//项目介绍
+    private String file;//项目文档
+    private Integer publisher;//项目发布者
 
     public Integer getPid() {
         return pid;
@@ -55,11 +28,11 @@ public class project {
         this.pname = pname;
     }
 
-    public double getBudget() {
+    public Double getBudget() {
         return budget;
     }
 
-    public void setBudget(double budget) {
+    public void setBudget(Double budget) {
         this.budget = budget;
     }
 
@@ -85,5 +58,29 @@ public class project {
 
     public void setPublisher(Integer publisher) {
         this.publisher = publisher;
+    }
+
+    public Project() {
+    }
+
+    public Project(Integer pid, String pname, Double budget, String pintroduce, String file, Integer publisher) {
+        this.pid = pid;
+        this.pname = pname;
+        this.budget = budget;
+        this.pintroduce = pintroduce;
+        this.file = file;
+        this.publisher = publisher;
+    }
+
+    @Override
+    public String toString() {
+        return "project{" +
+                "pid=" + pid +
+                ", pname='" + pname + '\'' +
+                ", budget=" + budget +
+                ", pintroduce='" + pintroduce + '\'' +
+                ", file='" + file + '\'' +
+                ", publisher=" + publisher +
+                '}';
     }
 }

@@ -1,6 +1,6 @@
-package com.xd.service;
+package com.service;
 
-import com.xd.bean.Job;
+import com.bean.Job;
 
 import java.util.List;
 
@@ -9,9 +9,14 @@ import java.util.List;
  * @create 2019-10-21-16:15
  */
 public interface JobService {
+
     List<Job> findAlljob();
+
     boolean deletejob(int jid);
+
     boolean addjob(Job job);
+
     boolean updatejob(Job job);
+
     Job findjobbyid(int jid);
 }

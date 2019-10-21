@@ -1,8 +1,8 @@
-package com.xd.service.Impl;
+package com.service.Impl;
 
-import com.xd.bean.Job;
-import com.xd.dao.JobDao;
-import com.xd.service.JobService;
+import com.bean.Job;
+import com.dao.JobDao;
+import com.service.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

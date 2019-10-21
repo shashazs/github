@@ -6,7 +6,7 @@ package com.bean;
  */
 
 //用户
-public class users {
+public class Users {
 
     private Integer uid;//用户编号
     private String uname;//名称
@@ -14,7 +14,7 @@ public class users {
     private String password;//密码
     private String role;//用户类型
 
-    public users(Integer uid, String uname, String email, String password, String role) {
+    public Users(Integer uid, String uname, String email, String password, String role) {
         this.uid = uid;
         this.uname = uname;
         this.email = email;
@@ -22,10 +22,10 @@ public class users {
         this.role = role;
     }
 
-    public users() {
+    public Users() {
     }
 
-    @java.lang.Override
+    @Override
     public java.lang.String toString() {
         return "users{" +
                 "uid=" + uid +

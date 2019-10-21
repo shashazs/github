@@ -1,7 +1,7 @@
-package com.xd.service;
+package com.service;
 
-import com.xd.bean.Job;
-import com.xd.bean.Project;
+import com.bean.Job;
+import com.bean.Project;
 
 import java.util.List;
 
@@ -10,9 +10,14 @@ import java.util.List;
  * @create 2019-10-21-16:16
  */
 public interface ProjectService {
+
     List<Project> findAllpro();
+
     boolean deletepro(int pid);
+
     boolean addpro(Project pro);
+
     boolean updatepro(Project pro);
+
     Job findprobyid(int pid);
 }

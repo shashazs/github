@@ -1,16 +1,22 @@
-package com.xdkj.bean;
+package com.bean;/*
+@author hj
+@create 2019-10-21-14:06
+*/
 
-/**
- * @author ShangGuan
- * @create 2019-10-21 10:49
- */
+public class Skills {
+    private Integer sid;
+    private String evaluate;
+    private Integer sPerson;
 
-//个人技能
-public class skills {
 
-    private Integer sid;//技能编号
-    private String sevaluate;//经验自评
-    private Integer sperson;//所属人
+    public Skills() {
+    }
+
+    public Skills(Integer sid, String evaluate, Integer sPerson) {
+        this.sid = sid;
+        this.evaluate = evaluate;
+        this.sPerson = sPerson;
+    }
 
     public Integer getSid() {
         return sid;
@@ -20,37 +26,28 @@ public class skills {
         this.sid = sid;
     }
 
-    public String getSevaluate() {
-        return sevaluate;
+    public String getEvaluate() {
+        return evaluate;
     }
 
-    public void setSevaluate(String sevaluate) {
-        this.sevaluate = sevaluate;
+    public void setEvaluate(String evaluate) {
+        this.evaluate = evaluate;
     }
 
-    public Integer getSperson() {
-        return sperson;
+    public Integer getsPerson() {
+        return sPerson;
     }
 
-    public void setSperson(Integer sperson) {
-        this.sperson = sperson;
+    public void setsPerson(Integer sPerson) {
+        this.sPerson = sPerson;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "skills{" +
+    @Override
+    public String toString() {
+        return "Skills{" +
                 "sid=" + sid +
-                ", sevaluate='" + sevaluate + '\'' +
-                ", sperson=" + sperson +
+                ", evaluate='" + evaluate + '\'' +
+                ", sPerson=" + sPerson +
                 '}';
-    }
-
-    public skills() {
-    }
-
-    public skills(Integer sid, String sevaluate, Integer sperson) {
-        this.sid = sid;
-        this.sevaluate = sevaluate;
-        this.sperson = sperson;
     }
 }
