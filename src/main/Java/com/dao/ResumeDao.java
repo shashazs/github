@@ -15,5 +15,6 @@ public interface ResumeDao {
 
     boolean deleteResumeById(int id);
 
+    boolean addResume(Resume resume);
 
 }
